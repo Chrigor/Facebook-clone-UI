@@ -1,10 +1,11 @@
 import React from 'react';
+import {Container} from './style';
 
 function Home(){
   return (
-    <div>
+    <Container>
       Home
-    </div>
+    </Container>
   )
 }
 

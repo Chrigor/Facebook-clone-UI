@@ -4,11 +4,13 @@ export const ContainerHeader = styled.header`
   display:flex;
   flex-direction:row;
   width: 100%;
-  min-height: 60px;
-  border: 1px solid #fff;
+  min-height: 10vh;
+  border-bottom: 1px solid #B8BBBF;
   align-items:center;
   justify-content:space-between;
+  padding: 0px 5px;
 `
+
 export const ContainerLogoAndSearch = styled.section`
 
   display:flex;
@@ -25,13 +27,13 @@ export const ContainerLogoAndSearch = styled.section`
   }
 
   input {
-    height: 27px;
+    height: 34px;
     width: 200px;
 
     padding: 4px 8px 4px 12px;
     margin-left: 8px;
 
-    border-radius: 18px;
+    border-radius: 24px;
     border:none;
 
     color: #9FA1A6;
@@ -42,19 +44,30 @@ export const ContainerLogoAndSearch = styled.section`
 
 export const ContainerNav = styled.nav`
   padding: 5px 8px;
+  min-width: 500px;
 
   ul {
     list-style:none;
     display:flex;
     justify-content:space-around;
-    width: 450px;
+    width: 100%;
   }
 
   li {
-    margin: 0px 2px;
+    display:flex;
+    justify-content:center;
 
+    margin: 0px 2px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    
     a {
       text-decoration:none;
+    }
+
+    &:hover {
+      background:#404040;
     }
   }
 `
@@ -64,7 +77,7 @@ export const ContainerPerfil = styled.section`
   align-items:center;
   justify-content:space-around;
 
-  min-width: 350px;
+  min-width: 200px;
   min-height: 30px;
   padding: 2px 4px;
 `
@@ -88,9 +101,10 @@ export const ContainerSubMenu = styled.section`
   flex-direction:row;
 
   padding: 2px 5px;
+  margin:0px 5px;
 `
 
-export const ContainerIconSubMenu = styled.div`
+export const ContainerIconSubMenu = styled.button`
   display:flex;
   justify-content:center;
   align-items:center;
@@ -101,7 +115,11 @@ export const ContainerIconSubMenu = styled.div`
   height: 40px;
   width: 40px;
   border-radius:20px;
-  margin: 3px;
+  margin:3px;
+
+  &:hover{
+    background:#707070;
+  }
 `
 
 export const ContainerInfo = styled.section`

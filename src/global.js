@@ -10,6 +10,10 @@ const GlobalStyle = createGlobalStyle`
     background-color:#18191A;
   }
 
+  body {
+    overflow-x:hidden;
+  }
+
   button {
     border: none;
   }

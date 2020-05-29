@@ -60,19 +60,19 @@ function Header() {
 
         <ContainerSubMenu>
 
-          <ContainerIconSubMenu>
+          <ContainerIconSubMenu onClick={() => alert('Icon')}>
             <FaPlus size={sizeSubIcon} />
           </ContainerIconSubMenu>
 
-          <ContainerIconSubMenu>
+          <ContainerIconSubMenu onClick={() => alert('Icon')}>
             <FaFacebookMessenger size={sizeSubIcon} />
           </ContainerIconSubMenu>
 
-          <ContainerIconSubMenu>
+          <ContainerIconSubMenu onClick={() => alert('Icon')}>
             <FaBell size={sizeSubIcon} />
           </ContainerIconSubMenu>
 
-          <ContainerIconSubMenu>
+          <ContainerIconSubMenu onClick={() => alert('Icon')}>
             <FaRegArrowAltCircleDown size={sizeSubIcon} />
           </ContainerIconSubMenu>
 
