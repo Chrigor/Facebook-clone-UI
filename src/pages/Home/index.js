@@ -1,10 +1,11 @@
 import React from 'react';
-import {Container} from './style';
+import { Container } from './style';
+import Aside from '../../componentes/Aside';
 
-function Home(){
+function Home() {
   return (
     <Container>
-      Home
+      <Aside />
     </Container>
   )
 }
