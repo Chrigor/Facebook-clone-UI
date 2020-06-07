@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ContainerHeader, ContainerLogoAndSearch, ContainerNav, ContainerPerfil, ImagePerfil, NamePerfil, ContainerSubMenu, ContainerIconSubMenu, ContainerInfo } from './style';
 import { FaSearch, FaHome, FaPlay, FaStore, FaUserFriends, FaGamepad, FaFacebookMessenger, FaPlus, FaBell, FaAngleDown } from 'react-icons/fa';
@@ -12,12 +12,17 @@ function Header() {
 
   const sizeSubIcon = 18;
 
+  const [videos, setVideos] = useState(10);
+  const [comercio, setComercio] = useState(0);
+  const [peoples, setPeoples] = useState(2);
+  const [games, setGames] = useState(5);
+
   return (
     <ContainerHeader>
       <ContainerLogoAndSearch>
         <img src={url} />
         <div>
-          <FaSearch color="#9FA1A6" />
+          <FaSearch color="#9FA1A6" size={18} />
           <input type="text" name="search" id="search" placeholder="Pesquisar no Facebook " />
         </div>
       </ContainerLogoAndSearch>
@@ -30,21 +35,44 @@ function Header() {
             </Link>
           </li>
           <li>
+            {videos != 0 &&
+            (<div>
+              {videos}
+            </div>)
+            }
             <Link to="/about">
               <FaPlay size={sizeIcon} color={colorIcon} />
             </Link>
           </li>
           <li>
+          {comercio != 0 &&
+            (<div>
+              {comercio}
+            </div>)
+            }
+
             <Link to="/users">
               <FaStore size={sizeIcon} color={colorIcon} />
             </Link>
           </li>
           <li>
+          {peoples != 0 &&
+            (<div>
+              {peoples}
+            </div>)
+            }
+
             <Link to="/friends">
               <FaUserFriends size={sizeIcon} color={colorIcon} />
             </Link>
           </li>
           <li>
+          {games != 0 &&
+            (<div>
+              {games}
+            </div>)
+            }
+
             <Link to="/games">
               <FaGamepad size={sizeIcon} color={colorIcon} />
             </Link>

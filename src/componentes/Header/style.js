@@ -9,6 +9,8 @@ export const ContainerHeader = styled.header`
   align-items:center;
   justify-content:space-between;
   padding: 0px 5px;
+
+  background:rgba(35,36,37,0.7);
 `
 
 export const ContainerLogoAndSearch = styled.section`
@@ -23,7 +25,7 @@ export const ContainerLogoAndSearch = styled.section`
     height: 45px;
     width: 45px;
     border-radius: 20px;
-    margin-right: 10px;
+    margin-right: 4px;
   }
 
 
@@ -31,10 +33,10 @@ export const ContainerLogoAndSearch = styled.section`
     position:relative;
 
       input {
-        height: 34px;
-        width: 200px;
+        height: 48px;
+        width: 260px;
 
-        padding: 4px 8px 4px 30px;
+        padding: 4px 8px 4px 38px;
         margin-left: 8px;
 
         border-radius: 24px;
@@ -43,12 +45,17 @@ export const ContainerLogoAndSearch = styled.section`
         color: #9FA1A6;
         font-size:14px;
         background-color:#3A3B3C;
+
+        &::placeholder{
+          color:#9FA1A6;
+          font-size: 16px;
+        }
     }
 
     svg {
       position: absolute;
-      top: 10px;
-      left: 15px;
+      top: 15px;
+      left: 20px;
     }
 
   }
@@ -56,22 +63,26 @@ export const ContainerLogoAndSearch = styled.section`
 `
 
 export const ContainerNav = styled.nav`
-  padding: 5px 8px;
-  min-width: 500px;
+  padding: 0;
+  max-width: 750px;
+  width: 100%;
 
   ul {
     list-style:none;
     display:flex;
     justify-content:space-around;
     width: 100%;
+    padding:0;
   }
 
   li {
     display:flex;
-    justify-content:center;
+    justify-content:flex-start;
+
+    position: relative;
 
     margin: 0px 2px;
-    padding: 10px;
+    padding: 10px 0px;
     border-radius: 10px;
     width: 100%;
     
@@ -81,6 +92,27 @@ export const ContainerNav = styled.nav`
 
     &:hover {
       background:#404040;
+    }
+
+    div {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        font-family: sans-serif;
+
+        position: absolute;
+        top: 0%;
+        left: 13%;
+
+        padding: 10px;
+        height:22px;
+        width: 25px;
+        background: red;
+        border-radius: 50%;
+
+        color:white;
+        font-weight:bold;
     }
   }
 `
