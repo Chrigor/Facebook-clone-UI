@@ -16,8 +16,10 @@ function Header() {
     <ContainerHeader>
       <ContainerLogoAndSearch>
         <img src={url} />
-        <FaSearch color="#9FA1A6" />
-        <input type="text" name="search" id="search" placeholder="Pesquisar no Facebook " />
+        <div>
+          <FaSearch color="#9FA1A6" />
+          <input type="text" name="search" id="search" placeholder="Pesquisar no Facebook " />
+        </div>
       </ContainerLogoAndSearch>
 
       <ContainerNav>

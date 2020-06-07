@@ -26,19 +26,31 @@ export const ContainerLogoAndSearch = styled.section`
     margin-right: 10px;
   }
 
-  input {
-    height: 34px;
-    width: 200px;
 
-    padding: 4px 8px 4px 12px;
-    margin-left: 8px;
+  div {
+    position:relative;
 
-    border-radius: 24px;
-    border:none;
+      input {
+        height: 34px;
+        width: 200px;
 
-    color: #9FA1A6;
-    font-size:14px;
-    background-color:#3A3B3C;
+        padding: 4px 8px 4px 30px;
+        margin-left: 8px;
+
+        border-radius: 24px;
+        border:none;
+
+        color: #9FA1A6;
+        font-size:14px;
+        background-color:#3A3B3C;
+    }
+
+    svg {
+      position: absolute;
+      top: 10px;
+      left: 15px;
+    }
+
   }
 
 `
