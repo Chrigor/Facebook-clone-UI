@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ContainerHeader, ContainerLogoAndSearch, ContainerNav, ContainerPerfil, ImagePerfil, NamePerfil, ContainerSubMenu, ContainerIconSubMenu, ContainerInfo } from './style';
-import { FaSearch, FaHome, FaPlay, FaStore, FaUserFriends, FaGamepad, FaFacebookMessenger, FaPlus, FaBell, FaRegArrowAltCircleDown } from 'react-icons/fa';
+import { FaSearch, FaHome, FaPlay, FaStore, FaUserFriends, FaGamepad, FaFacebookMessenger, FaPlus, FaBell, FaAngleDown } from 'react-icons/fa';
 
 function Header() {
 
@@ -73,7 +73,7 @@ function Header() {
           </ContainerIconSubMenu>
 
           <ContainerIconSubMenu onClick={() => alert('Icon')}>
-            <FaRegArrowAltCircleDown size={sizeSubIcon} />
+            <FaAngleDown size={sizeSubIcon} />
           </ContainerIconSubMenu>
 
         </ContainerSubMenu>

@@ -22,6 +22,12 @@ const GlobalStyle = createGlobalStyle`
     border: none;
   }
 
+  button:visited, input:visited, input:focus {
+    border: none;
+  }
+
+
+
 `;
 
 export default GlobalStyle;

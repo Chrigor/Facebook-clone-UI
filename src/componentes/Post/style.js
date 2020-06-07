@@ -79,8 +79,26 @@ export const ContainerAction = styled.div`
   width: 100%;
   height: 40px;
 
-  padding: 2px;
+  padding: 2px 12px;
   background: transparent;
+`
+
+export const ContainerComment = styled.div`
+  width: 100%;
+  height: 30px;
+  padding: 2px 12px;
+  margin-bottom: 8px;
+`
+export const InputComment = styled.input`
+  display:flex;
+  flex:1;
+  width: 100%;
+
+  padding: 8px;
+  border-radius: 8px;
+
+  background:#3A3B3C;
+  border:none;
 `
 
 export const ButtonAction = styled.button`
@@ -97,6 +115,9 @@ export const ButtonAction = styled.button`
     color: ${(props) => {
       console.log(props);
       return (props.color)
-    }
+  }
+
   }
 `
+
+

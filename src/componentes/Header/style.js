@@ -40,6 +40,7 @@ export const ContainerLogoAndSearch = styled.section`
     font-size:14px;
     background-color:#3A3B3C;
   }
+
 `
 
 export const ContainerNav = styled.nav`

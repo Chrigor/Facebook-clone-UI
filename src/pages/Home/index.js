@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, ContainerPosts, ContainerMessenger } from './style';
 import Aside from '../../componentes/Aside';
+import AsideRight from '../../componentes/AsideRight';
 import Post from '../../componentes/Post';
 const avatar = "https://jovemnerd.com.br/wp-content/uploads/avatar_29.jpg";
 
@@ -50,7 +51,7 @@ function Home() {
       </ContainerPosts>
 
       <ContainerMessenger>
-
+        <AsideRight />
       </ContainerMessenger>
 
     </Container>
