@@ -1,9 +1,10 @@
 import React from 'react';
-import { FaSearch, FaEllipsisH } from 'react-icons/fa';
+import { FaSearch, FaEllipsisH, FaFacebookMessenger } from 'react-icons/fa';
 import { Container, ContainerFriend, ContainerMessenger, TitleMessenger } from './style';
 
 const avatar = "https://jovemnerd.com.br/wp-content/uploads/avatar_29.jpg";
-const sizeIcon = 18;
+const sizeIcon = 16;
+const sizeMore = 34;
 const colorIcon = "#2D88FF";
 
 function Aside() {
@@ -98,8 +99,8 @@ function Aside() {
 
         </ContainerMessenger>
 
-        <button>
-        <FaSearch size={sizeIcon} color={colorIcon} />
+      <button>
+        <FaFacebookMessenger size={sizeMore} color={colorIcon} />
       </button>
 
       </Container>

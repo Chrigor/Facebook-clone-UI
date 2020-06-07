@@ -13,15 +13,16 @@ export const Container = styled.aside`
 
   button {
     border:none;
-    background:transparent;
+    background:#ddd;
+    border-radius: 50%;
 
     position: absolute;
-    right:15px;
+    right:25px;
     bottom: 10px;
     padding: 10px;
 
     &:hover {
-      background: #ddd;
+      background: #bbb;
     }
   }
 `;
