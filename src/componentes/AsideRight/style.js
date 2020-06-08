@@ -9,7 +9,7 @@ export const Container = styled.aside`
 
   width: 320px;
   padding-bottom:15px;
-  background: #333;
+  background: rgba(37,38,39,1);
 
   button {
     border:none;
@@ -24,6 +24,10 @@ export const Container = styled.aside`
     &:hover {
       background: #bbb;
     }
+
+    img {
+      color: #fff;
+    }
   }
 `;
 
@@ -33,27 +37,30 @@ export const ContainerFriend = styled.header`
   flex-direction:row;
   align-items:center;
 
-  overflow-y:hidden;
-
+  margin-bottom: 12px;
+  
   width: 100%;
-
-  padding: 2px 6px;
-
+  height: 50px;
+  padding: 20px 14px;
+  border-radius: 10px;
+  
   h3 {
     font-size: 16px;
     font-family:sans-serif;
     color:#B7B9BB;
   }
-  
-  img {
-    width: 45px;
-    height:42px;  
-    border-radius: 22px;
-    margin-right: 10px;
-  }
 
   &:hover{
     background:#404040;
+    cursor:pointer;
+  }
+
+  img {
+    width: 48px;
+    height: 45px;
+
+    border-radius: 50%;
+    margin-right: 12px;
   }
 
 `
@@ -82,13 +89,13 @@ export const ContainerMessenger = styled.section`
  
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #303031; 
+    background: #555; 
   }
 
   /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+  /* ::-webkit-scrollbar-thumb:hover {
     background: #555; 
-  }
+  } */
 
 `
 

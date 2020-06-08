@@ -7,11 +7,11 @@ export const Container = styled.button`
   align-items:center;
   justify-content:center;
 
-  height: 40px;
+  height: 50px;
   width:90%;
   background:#444546;
 
-  padding: 5px 20px;
+  padding: 10px 20px;
   margin: 0px 10px;
 
   border-radius: 10px;
@@ -22,6 +22,8 @@ export const Container = styled.button`
 
   p {
     color:#B7B9BB;
+    font-size: 18px;
+    font-weight:bold;
   }
 
   &:hover {

@@ -4,13 +4,13 @@ export const ContainerHeader = styled.header`
   display:flex;
   flex-direction:row;
   width: 100%;
-  height: 7vh;
-  border-bottom: 1px solid #B8BBBF;
+  height: 8vh;
+  
   align-items:center;
   justify-content:space-between;
   padding: 0px 5px;
 
-  background:rgba(35,36,37,0.7);
+  background:rgba(35,36,37,1);
 `
 
 export const ContainerLogoAndSearch = styled.section`
@@ -158,6 +158,8 @@ export const ContainerIconSubMenu = styled.button`
   justify-content:center;
   align-items:center;
 
+  position:relative;
+
   background: #4E4F50;
   color:#E7E9ED;
 
@@ -169,6 +171,28 @@ export const ContainerIconSubMenu = styled.button`
   &:hover{
     background:#707070;
   }
+
+  div {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        font-family: sans-serif;
+
+        position: absolute;
+        top: -15%;
+        right: -10%;
+
+        padding: 10px;
+        height:22px;
+        width: 25px;
+        background: red;
+        border-radius: 50%;
+
+        color:white;
+        font-weight:bold;
+    }
+
 `
 
 export const ContainerInfo = styled.section`

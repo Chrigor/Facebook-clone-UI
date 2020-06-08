@@ -5,7 +5,7 @@ import { FaSearch, FaHome, FaPlay, FaStore, FaUserFriends, FaGamepad, FaFacebook
 
 function Header() {
 
-  const sizeIcon = 28;
+  const sizeIcon = 32;
   const colorIcon = "#B8BBBF";
   const url = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1024px-Facebook_f_logo_%282019%29.svg.png";
   const avatar = "https://jovemnerd.com.br/wp-content/uploads/avatar_29.jpg";
@@ -18,6 +18,10 @@ function Header() {
   const [comercio, setComercio] = useState(0);
   const [peoples, setPeoples] = useState(2);
   const [games, setGames] = useState(5);
+
+  const [messenger, setMessenger] = useState(5);
+  const [notifications, setNotifications] = useState(5);
+
   const [pathActive, setPathactive] = useState("/");
 
 
@@ -110,10 +114,20 @@ function Header() {
           </ContainerIconSubMenu>
 
           <ContainerIconSubMenu onClick={() => alert('Icon')}>
+          {messenger != 0 &&
+              (<div>
+                {messenger}
+              </div>)
+            }
             <FaFacebookMessenger size={sizeSubIcon} />
           </ContainerIconSubMenu>
 
           <ContainerIconSubMenu onClick={() => alert('Icon')}>
+          {notifications != 0 &&
+              (<div>
+                {notifications}
+              </div>)
+            }
             <FaBell size={sizeSubIcon} />
           </ContainerIconSubMenu>
 

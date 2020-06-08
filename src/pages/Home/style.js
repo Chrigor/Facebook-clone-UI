@@ -9,7 +9,7 @@ export const Container = styled.section`
   width:100%;
   height: 92vh;
   padding: 0px 0px;
-  background: #333333;
+  background: rgba(37,38,39,1);
 
 
   /* @media(max-width: 1400px) {
@@ -56,7 +56,7 @@ export const ContainerMessenger = styled.section`
   flex-direction:column;
 
   width: 100%;
-  height: 90vh;
+  height: 95vh;
   
   min-height: 100%;
   max-width: 350px;

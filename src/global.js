@@ -11,12 +11,12 @@ const GlobalStyle = createGlobalStyle`
   html, body {
     margin:0;
     padding:0;
-    background-color:#242526;
     -webkit-font-smoothing:antialized;
   }
 
   body {
     overflow-x:hidden;
+    background-color:rgba(24,25,26, 0.4);
   }
 
   button {
