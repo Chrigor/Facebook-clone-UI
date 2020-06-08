@@ -70,6 +70,26 @@ export const ContainerMessenger = styled.section`
     list-style:none;
     padding:0;
   }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #242425; 
+  }
+ 
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #303031; 
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
 `
 
 export const TitleMessenger = styled.h2`
