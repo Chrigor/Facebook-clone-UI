@@ -22,7 +22,7 @@ export const Container = styled.section`
   } */
 `
 
-export const ContainerPosts = styled.section`
+export const ContainerMain = styled.section`
   overflow-x: hidden;
   overflow-y: scroll;
 
@@ -60,4 +60,31 @@ export const ContainerMessenger = styled.section`
   
   min-height: 100%;
   max-width: 350px;
+`
+
+export const ContainerStories = styled.section`
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 270px;
+
+  max-width: 740px;
+
+  margin: 5px 0px 20px 0px;
+`
+export const ContainerNewPost = styled.section`
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 150px;
+
+  max-width: 740px;
+
+  margin: 5px 0px 0px 0px;
+
+  padding: 2px;
 `
