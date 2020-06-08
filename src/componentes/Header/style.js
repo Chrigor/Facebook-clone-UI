@@ -163,9 +163,9 @@ export const ContainerIconSubMenu = styled.button`
   background: #4E4F50;
   color:#E7E9ED;
 
-  height: 40px;
-  width: 40px;
-  border-radius:20px;
+  height: 50px;
+  width: 50px;
+  border-radius:50%;
   margin:3px;
 
   &:hover{

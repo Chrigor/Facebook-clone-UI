@@ -29,7 +29,7 @@ export const ContainerMain = styled.section`
   width: 100%;
   height: 90vh;
 
-  max-width: 740px;
+  max-width: 720px;
 
   ::-webkit-scrollbar {
     width: 10px;

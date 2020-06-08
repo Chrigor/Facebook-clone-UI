@@ -10,7 +10,7 @@ function Header() {
   const url = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1024px-Facebook_f_logo_%282019%29.svg.png";
   const avatar = "https://jovemnerd.com.br/wp-content/uploads/avatar_29.jpg";
 
-  const sizeSubIcon = 18;
+  const sizeSubIcon = 22;
 
   const colorActive = "red";
 

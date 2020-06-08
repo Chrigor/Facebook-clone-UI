@@ -12,7 +12,7 @@ function Aside() {
       <ContainerList>
         <ContainerItem>
           <img src={avatar} />
-          <h3>Avatar</h3>
+          <h3>Avatar Nelson</h3>
         </ContainerItem>
 
         <ul>
