@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ContainerHeader, ContainerLogoAndSearch, ContainerNav, ContainerPerfil, ImagePerfil, NamePerfil, ContainerSubMenu, ContainerIconSubMenu, ContainerInfo } from './style';
 import { FaSearch, FaHome, FaPlay, FaStore, FaUserFriends, FaGamepad, FaFacebookMessenger, FaPlus, FaBell, FaAngleDown } from 'react-icons/fa';
@@ -12,10 +12,25 @@ function Header() {
 
   const sizeSubIcon = 18;
 
+  const colorActive = "red";
+
   const [videos, setVideos] = useState(10);
   const [comercio, setComercio] = useState(0);
   const [peoples, setPeoples] = useState(2);
   const [games, setGames] = useState(5);
+  const [pathActive, setPathactive] = useState("/");
+
+
+
+  useEffect(handleClickPath, [pathActive]);
+
+
+  function handleClickPath() {
+    const path = window.location.pathname;
+    setPathactive(path.toString());
+    console.log(pathActive);
+  }
+
 
   return (
     <ContainerHeader>
@@ -29,48 +44,48 @@ function Header() {
 
       <ContainerNav>
         <ul>
-          <li>
+          <li onClick={() => handleClickPath()}>
             <Link to="/">
               <FaHome size={sizeIcon} color={colorIcon} />
             </Link>
           </li>
-          <li>
+          <li onClick={() => handleClickPath()}>
             {videos != 0 &&
-            (<div>
-              {videos}
-            </div>)
+              (<div>
+                {videos}
+              </div>)
             }
             <Link to="/about">
               <FaPlay size={sizeIcon} color={colorIcon} />
             </Link>
           </li>
-          <li>
-          {comercio != 0 &&
-            (<div>
-              {comercio}
-            </div>)
+          <li onClick={() => handleClickPath()}>
+            {comercio != 0 &&
+              (<div>
+                {comercio}
+              </div>)
             }
 
             <Link to="/users">
               <FaStore size={sizeIcon} color={colorIcon} />
             </Link>
           </li>
-          <li>
-          {peoples != 0 &&
-            (<div>
-              {peoples}
-            </div>)
+          <li onClick={() => handleClickPath()}>
+            {peoples != 0 &&
+              (<div>
+                {peoples}
+              </div>)
             }
 
             <Link to="/friends">
               <FaUserFriends size={sizeIcon} color={colorIcon} />
             </Link>
           </li>
-          <li>
-          {games != 0 &&
-            (<div>
-              {games}
-            </div>)
+          <li onClick={() => handleClickPath()}>
+            {games != 0 &&
+              (<div>
+                {games}
+              </div>)
             }
 
             <Link to="/games">

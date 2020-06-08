@@ -5,7 +5,7 @@ export const Container = styled.section`
   flex-direction:column;
 
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   background: #242526;
   margin: 8px 0px; 
   padding: 2px 0px;
@@ -98,6 +98,7 @@ export const InputComment = styled.input`
   border-radius: 8px;
 
   background:#3A3B3C;
+  color: #CCCCCC;
   border:none;
 `
 

@@ -74,17 +74,20 @@ export const ContainerNav = styled.nav`
     width: 100%;
     padding:0;
   }
-
+  
   li {
-    display:flex;
-    justify-content:flex-start;
+      display:flex;
+      justify-content:center;
 
-    position: relative;
+      position: relative;
 
-    margin: 0px 2px;
-    padding: 10px 0px;
-    border-radius: 10px;
-    width: 100%;
+      margin: 0px 2px;
+      padding: 10px 0px;
+      border-radius: 10px;
+
+      width: 100%;
+
+    
     
     a {
       text-decoration:none;
@@ -103,7 +106,7 @@ export const ContainerNav = styled.nav`
 
         position: absolute;
         top: 0%;
-        left: 13%;
+        right: 30%;
 
         padding: 10px;
         height:22px;
@@ -114,6 +117,7 @@ export const ContainerNav = styled.nav`
         color:white;
         font-weight:bold;
     }
+    
   }
 `
 

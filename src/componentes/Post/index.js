@@ -47,8 +47,8 @@ function Post({ nome, urlFoto, urlPost, descricao }) {
             <span>Comentar</span>
         </ButtonAction>
 
-        <ButtonAction onClick={() => handleClickComment()} color={colorComment}>
-            <FaRegShareSquare size={sizeIcon} color={colorComment} />
+        <ButtonAction color={colorComment}>
+            <FaRegShareSquare size={sizeIcon} color={colorComment}/>
             <span>Compartilhar</span>
         </ButtonAction>
 

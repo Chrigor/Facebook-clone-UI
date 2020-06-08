@@ -29,7 +29,7 @@ export const ContainerPosts = styled.section`
   width: 100%;
   height: 90vh;
 
-  max-width: 700px;
+  max-width: 740px;
 `
 
 export const ContainerMessenger = styled.section`

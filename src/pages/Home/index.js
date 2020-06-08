@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, ContainerPosts, ContainerMessenger } from './style';
-import Aside from '../../componentes/Aside';
+import AsideLeft from '../../componentes/AsideLeft';
 import AsideRight from '../../componentes/AsideRight';
 import Post from '../../componentes/Post';
 const avatar = "https://jovemnerd.com.br/wp-content/uploads/avatar_29.jpg";
@@ -29,11 +29,11 @@ const data = [
 function Home() {
   return (
     <Container>
-      <Aside />
+      <AsideLeft />
       <ContainerPosts>
 
         {
-          data.map((elemento) => {
+          data.map((elemento, indice) => {
 
             let { nome, urlPost, urlFoto, descricao } = elemento;
 
@@ -43,6 +43,7 @@ function Home() {
                 urlPost={urlPost}
                 urlFoto={urlFoto}
                 descricao={descricao}
+                key={indice}
               />
             )
           })
