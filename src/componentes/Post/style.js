@@ -6,7 +6,7 @@ export const Container = styled.section`
 
   width: 100%;
   background: #333;
-  margin: 8px 0px; 
+  margin: 12px 0px; 
   padding: 2px 0px;
   border-radius: 10px;
 `;

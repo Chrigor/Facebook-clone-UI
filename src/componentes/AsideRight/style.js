@@ -7,7 +7,7 @@ export const Container = styled.aside`
 
   align-self: flex-end;
 
-  width: 320px;
+  width: 350px;
   padding-bottom:15px;
   background: rgba(37,38,39,1);
 

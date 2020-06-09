@@ -87,8 +87,6 @@ export const ContainerNav = styled.nav`
 
       width: 100%;
 
-    
-    
     a {
       text-decoration:none;
     }
@@ -148,7 +146,7 @@ export const NamePerfil = styled.p`
 export const ContainerSubMenu = styled.section`
   display:flex;
   flex-direction:row;
-
+  
   padding: 2px 5px;
   margin:0px 5px;
 `
