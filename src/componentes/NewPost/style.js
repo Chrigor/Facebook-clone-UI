@@ -12,12 +12,6 @@ export const Container = styled.div`
 
   margin: 0px;
 
-  hr {
-    width: 90%;
-    height: 1px;
-    background-color: #dddddd;
-  }
-
   div {
     display:flex;
     flex-direction:row;

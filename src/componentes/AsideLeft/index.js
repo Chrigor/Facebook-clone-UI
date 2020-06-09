@@ -44,6 +44,9 @@ function Aside() {
         </ul>
 
         <ButtonMore />
+
+        <hr/>
+        
       </ContainerList>
 
 
@@ -71,7 +74,6 @@ function Aside() {
 
         </ul>
       </ContainerAtalhos>
-
     </Container>
   )
 }

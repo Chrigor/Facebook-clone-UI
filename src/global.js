@@ -19,6 +19,14 @@ const GlobalStyle = createGlobalStyle`
     background-color:rgba(24,25,26, 0.4);
   }
 
+  hr {
+    width: 100%;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #333;
+    background-color: #333;
+  }
+
   button {
     border: none;
   }

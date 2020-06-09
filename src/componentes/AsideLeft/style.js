@@ -21,7 +21,6 @@ export const ContainerList = styled.section`
     margin-bottom:16px;
   }
 
-  border-bottom: 1px solid rgba(255,255,255,0.75);
 
   &:first-child {
     margin: 10px 0px;

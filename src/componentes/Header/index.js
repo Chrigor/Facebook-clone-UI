@@ -37,108 +37,110 @@ function Header() {
 
 
   return (
-    <ContainerHeader>
-      <ContainerLogoAndSearch>
-        <img src={url} />
-        <div>
-          <FaSearch color="#9FA1A6" size={18} />
-          <input type="text" name="search" id="search" placeholder="Pesquisar no Facebook " />
-        </div>
-      </ContainerLogoAndSearch>
+    <>
+      <ContainerHeader>
+        <ContainerLogoAndSearch>
+          <img src={url} />
+          <div>
+            <FaSearch color="#9FA1A6" size={18} />
+            <input type="text" name="search" id="search" placeholder="Pesquisar no Facebook " />
+          </div>
+        </ContainerLogoAndSearch>
 
-      <ContainerNav>
-        <ul>
-          <li onClick={() => handleClickPath()}>
-            <Link to="/">
-              <FaHome size={sizeIcon} color={colorIcon} />
-            </Link>
-          </li>
-          <li onClick={() => handleClickPath()}>
-            {videos != 0 &&
-              (<div>
-                {videos}
-              </div>)
-            }
-            <Link to="/about">
-              <FaPlay size={sizeIcon} color={colorIcon} />
-            </Link>
-          </li>
-          <li onClick={() => handleClickPath()}>
-            {comercio != 0 &&
-              (<div>
-                {comercio}
-              </div>)
-            }
+        <ContainerNav>
+          <ul>
+            <li onClick={() => handleClickPath()}>
+              <Link to="/">
+                <FaHome size={sizeIcon} color={colorIcon} />
+              </Link>
+            </li>
+            <li onClick={() => handleClickPath()}>
+              {videos != 0 &&
+                (<div>
+                  {videos}
+                </div>)
+              }
+              <Link to="/about">
+                <FaPlay size={sizeIcon} color={colorIcon} />
+              </Link>
+            </li>
+            <li onClick={() => handleClickPath()}>
+              {comercio != 0 &&
+                (<div>
+                  {comercio}
+                </div>)
+              }
 
-            <Link to="/users">
-              <FaStore size={sizeIcon} color={colorIcon} />
-            </Link>
-          </li>
-          <li onClick={() => handleClickPath()}>
-            {peoples != 0 &&
-              (<div>
-                {peoples}
-              </div>)
-            }
+              <Link to="/users">
+                <FaStore size={sizeIcon} color={colorIcon} />
+              </Link>
+            </li>
+            <li onClick={() => handleClickPath()}>
+              {peoples != 0 &&
+                (<div>
+                  {peoples}
+                </div>)
+              }
 
-            <Link to="/friends">
-              <FaUserFriends size={sizeIcon} color={colorIcon} />
-            </Link>
-          </li>
-          <li onClick={() => handleClickPath()}>
-            {games != 0 &&
-              (<div>
-                {games}
-              </div>)
-            }
+              <Link to="/friends">
+                <FaUserFriends size={sizeIcon} color={colorIcon} />
+              </Link>
+            </li>
+            <li onClick={() => handleClickPath()}>
+              {games != 0 &&
+                (<div>
+                  {games}
+                </div>)
+              }
 
-            <Link to="/games">
-              <FaGamepad size={sizeIcon} color={colorIcon} />
-            </Link>
-          </li>
-        </ul>
-      </ContainerNav>
+              <Link to="/games">
+                <FaGamepad size={sizeIcon} color={colorIcon} />
+              </Link>
+            </li>
+          </ul>
+        </ContainerNav>
 
-      <ContainerPerfil>
-        <ContainerInfo>
-          <ImagePerfil src={avatar} />
-          <NamePerfil>
-            Avatar
+        <ContainerPerfil>
+          <ContainerInfo>
+            <ImagePerfil src={avatar} />
+            <NamePerfil>
+              Avatar
         </NamePerfil>
-        </ContainerInfo>
+          </ContainerInfo>
 
-        <ContainerSubMenu>
+          <ContainerSubMenu>
 
-          <ContainerIconSubMenu onClick={() => alert('Icon')}>
-            <FaPlus size={sizeSubIcon} />
-          </ContainerIconSubMenu>
+            <ContainerIconSubMenu onClick={() => alert('Icon')}>
+              <FaPlus size={sizeSubIcon} />
+            </ContainerIconSubMenu>
 
-          <ContainerIconSubMenu onClick={() => alert('Icon')}>
-          {messenger != 0 &&
-              (<div>
-                {messenger}
-              </div>)
-            }
-            <FaFacebookMessenger size={sizeSubIcon} />
-          </ContainerIconSubMenu>
+            <ContainerIconSubMenu onClick={() => alert('Icon')}>
+              {messenger != 0 &&
+                (<div>
+                  {messenger}
+                </div>)
+              }
+              <FaFacebookMessenger size={sizeSubIcon} />
+            </ContainerIconSubMenu>
 
-          <ContainerIconSubMenu onClick={() => alert('Icon')}>
-          {notifications != 0 &&
-              (<div>
-                {notifications}
-              </div>)
-            }
-            <FaBell size={sizeSubIcon} />
-          </ContainerIconSubMenu>
+            <ContainerIconSubMenu onClick={() => alert('Icon')}>
+              {notifications != 0 &&
+                (<div>
+                  {notifications}
+                </div>)
+              }
+              <FaBell size={sizeSubIcon} />
+            </ContainerIconSubMenu>
 
-          <ContainerIconSubMenu onClick={() => alert('Icon')}>
-            <FaAngleDown size={sizeSubIcon} />
-          </ContainerIconSubMenu>
+            <ContainerIconSubMenu onClick={() => alert('Icon')}>
+              <FaAngleDown size={sizeSubIcon} />
+            </ContainerIconSubMenu>
 
-        </ContainerSubMenu>
+          </ContainerSubMenu>
 
-      </ContainerPerfil>
-    </ContainerHeader>
+        </ContainerPerfil>
+      </ContainerHeader>
+    </>
   )
 }
 

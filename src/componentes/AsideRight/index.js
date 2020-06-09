@@ -42,6 +42,8 @@ function Aside() {
             </div>
           </TitleMessenger>
 
+          <hr />
+
           <ul>
             <ContainerFriend>
               <img src={avatar} />

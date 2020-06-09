@@ -33,9 +33,8 @@ function Home() {
   return (
     <Container>
       <AsideLeft />
-
       <ContainerMain>
-
+      <hr />
         <ContainerStories>
           <Storie
             img="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR9i7GLXxjOVsUYeCMYxRJnrGas3tLqpG6TiXE-U5zQQX2zCDQ9&usqp=CAU"

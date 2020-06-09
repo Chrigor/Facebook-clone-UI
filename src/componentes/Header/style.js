@@ -11,6 +11,7 @@ export const ContainerHeader = styled.header`
   padding: 0px 5px;
 
   background:rgba(35,36,37,1);
+
 `
 
 export const ContainerLogoAndSearch = styled.section`
