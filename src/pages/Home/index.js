@@ -13,7 +13,7 @@ const data = [
     nome: "Chrigor Eduardo",
     urlPost: "https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png",
     urlFoto: avatar,
-    descricao: "usdhusahduhsauhdusa kikliolopçpçpppppppppppppppppppppppppppppppppppppppppppppppppppppi ijijij..ij.j.j jij.i.iuj.i.jjiui.ji.ijj.çppçpçpçpçpçpçpç",
+    descricao: "Teste de descricao",
   },
   {
     nome: "Chrigor Eduardo",

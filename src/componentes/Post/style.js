@@ -64,13 +64,13 @@ export const ContainerPost = styled.div`
   }
 
   p {
-    margin:0px 0px 5px 0px;
+    margin:5px 0px 5px 0px;
     padding: 2px 24px;
 
     color:#ddd;
     width:100%;
     text-align:justify;
-
+    font-family:sans-serif;
     box-sizing:border-box;
   }
 `
