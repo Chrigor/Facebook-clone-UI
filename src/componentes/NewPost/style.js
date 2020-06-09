@@ -12,6 +12,15 @@ export const Container = styled.div`
 
   margin: 0px;
 
+
+  hr {
+    width: 90%;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #666;
+    background-color: #333;
+  }
+
   div {
     display:flex;
     flex-direction:row;
